@@ -1,0 +1,58 @@
+.submit {
+     -fx-background-color: #761054;
+        -fx-font-family: Pars;
+        -fx-font-size: 25px;
+        -fx-text-fill: #FFF;
+        -fx-background-radius: 20px;
+	
+}
+.submit:hover {
+ -fx-cursor: hand;
+    -fx-border-color: #761054;
+    -fx-border-width: 3px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: #ba5699;
+    -fx-font-weight: bold;
+}
+.submit:pressed {
+        -fx-rotate:1;
+}
+.toplb{
+        -fx-text-fill: #c82893;
+        -fx-font-family: Pars;
+            -fx-font-size: 30px;
+}
+.textf{
+    -fx-background-radius :10px;
+    -fx-focus-color: #d04d9c;
+
+
+}
+.back{
+   -fx-cursor: hand;
+   -fx-rotate:1;
+}
+
+.cBOX{
+    -fx-background-radius: 10px;
+    -fx-mark-color: #761054;
+    -fx-focus-color: #d04d9c;
+}
+.cBOX .context-menu {
+    -fx-pref-width: 120;
+    -fx-alignment: center;
+}
+.cBOX .menu-item:focused { -fx-background-color: #761054; }
+
+.cBOX2{
+    -fx-background-radius: 10px;
+    -fx-mark-color: #761054;
+    -fx-focus-color: #d04d9c;
+}
+.cBut{
+    -fx-background-color: #761054;
+    -fx-text-fill: #FFF;
+    -fx-background-radius: 20px;
+}
+

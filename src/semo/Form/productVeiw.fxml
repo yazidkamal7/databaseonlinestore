@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semo.ProductController">
+   <children>
+      <TabPane maxWidth="1.7976931348623157E308" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Sticker">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="600.0">
+                     <children>
+                        <TableView fx:id="StickerTable" prefHeight="292.0" prefWidth="600.0" styleClass="tableVeiw">
+                          <columns>
+                            <TableColumn fx:id="sid" prefWidth="75.0" text="id" />
+                            <TableColumn fx:id="sname" prefWidth="154.0" text="Name" />
+                              <TableColumn fx:id="ssize" prefWidth="77.0" text="size" />
+                              <TableColumn fx:id="sprice" prefWidth="126.0" text="price" />
+                              <TableColumn fx:id="simage" prefWidth="119.0" text="image" />
+                          </columns>
+                        </TableView>
+                        <HBox alignment="CENTER" layoutX="125.0" layoutY="292.0" prefHeight="76.0" prefWidth="406.0" spacing="50.0">
+                           <children>
+                              <JFXButton onAction="#deleteselected" styleClass="bt" text="Delete this Product" />
+                              <VBox prefHeight="69.0" prefWidth="205.0">
+                                 <children>
+                                    <Label prefHeight="17.0" prefWidth="174.0" text="Update price for all a same size" />
+                                    <HBox prefHeight="62.0" prefWidth="162.0">
+                                       <children>
+                                          <VBox prefHeight="54.0" prefWidth="53.0">
+                                             <children>
+                                                <TextField fx:id="ssp" prefHeight="25.0" prefWidth="60.0" promptText="S price" style="-fx-background-radius: 10px;" />
+                                                <JFXButton onAction="#usb" prefHeight="34.0" prefWidth="80.0" styleClass="bt" text="update" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="54.0" prefWidth="53.0">
+                                             <children>
+                                                <TextField fx:id="smp" prefHeight="25.0" prefWidth="60.0" promptText="M price" style="-fx-background-radius: 10px;" />
+                                                <JFXButton onAction="#umb" prefHeight="34.0" prefWidth="80.0" styleClass="bt" text="update" />
+                                             </children>
+                                          </VBox>
+                                          <VBox prefHeight="54.0" prefWidth="53.0">
+                                             <children>
+                                                <TextField fx:id="slp" prefHeight="25.0" prefWidth="60.0" promptText="L price" style="-fx-background-radius: 10px;" />
+                                                <JFXButton onAction="#ulb" prefHeight="34.0" prefWidth="80.0" styleClass="bt" text="update" />
+                                             </children>
+                                          </VBox>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Pin">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="600.0">
+                     <children>
+                        <TableView fx:id="PinTable" prefHeight="292.0" prefWidth="600.0" styleClass="tableVeiw">
+                           <columns>
+                              <TableColumn fx:id="Pid" prefWidth="75.0" text="id" />
+                              <TableColumn fx:id="pname" prefWidth="154.0" text="Name" />
+                              <TableColumn fx:id="psize" prefWidth="77.0" text="size" />
+                              <TableColumn fx:id="pprice" prefWidth="126.0" text="price" />
+                              <TableColumn fx:id="pimage" prefWidth="119.0" text="image" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Mug">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="600.0">
+                     <children>
+                        <TableView fx:id="MugTable" prefHeight="292.0" prefWidth="600.0" styleClass="tableVeiw">
+                           <columns>
+                              <TableColumn fx:id="mid" prefWidth="75.0" text="id" />
+                              <TableColumn fx:id="mname" prefWidth="154.0" text="Name" />
+                              <TableColumn fx:id="isMagic" prefWidth="77.0" text="isMagic" />
+                              <TableColumn fx:id="mprice" prefWidth="126.0" text="price" />
+                              <TableColumn fx:id="mimage" prefWidth="119.0" text="image" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="NoteBook">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="255.0" prefWidth="600.0">
+                     <children>
+                        <TableView fx:id="NoteBookTable" prefHeight="292.0" prefWidth="600.0" styleClass="tableVeiw">
+                           <columns>
+                              <TableColumn fx:id="nid" prefWidth="75.0" text="id" />
+                              <TableColumn fx:id="nname" prefWidth="154.0" text="Name" />
+                              <TableColumn fx:id="numOfpage" prefWidth="117.0" text="Number of Page" />
+                              <TableColumn fx:id="nprice" prefWidth="107.0" text="price" />
+                              <TableColumn fx:id="nimage" prefWidth="98.0" text="image" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+   <stylesheets>
+      <URL value="@tableViewStyle.css" />
+      <URL value="@tButton.css" />
+   </stylesheets>
+</AnchorPane>

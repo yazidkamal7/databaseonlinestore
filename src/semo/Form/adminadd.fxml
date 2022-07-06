@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="450.0" style="-fx-background-color: white;" stylesheets="@c-styel.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semo.AddnewCustmar">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutY="77.0" prefHeight="399.0" prefWidth="434.0" spacing="7.0" style="-fx-background-color: white;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="434.0" spacing="30.0">
+               <children>
+                  <VBox maxHeight="20.0" prefWidth="150.0" spacing="3.0">
+                     <children>
+                        <Label styleClass="namelb" text="First name" />
+                        <TextField fx:id="firstname" prefHeight="25.0" prefWidth="124.0" styleClass="textf" />
+                        <Label fx:id="wfirst" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="62.0" layoutY="18.0" maxHeight="20.0" prefWidth="150.0" spacing="3.0">
+                     <children>
+                        <Label styleClass="namelb" text="last name" />
+                        <TextField fx:id="lastname" prefHeight="25.0" prefWidth="124.0" styleClass="textf" />
+                        <Label fx:id="wlast" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <VBox prefHeight="45.0" prefWidth="434.0" spacing="3.0">
+               <children>
+                  <Label styleClass="namelb" text="Phone number">
+                     <VBox.margin>
+                        <Insets left="53.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="phone" maxWidth="328.0" minWidth="90.0" prefHeight="25.0" prefWidth="328.0" styleClass="textf">
+                     <VBox.margin>
+                        <Insets left="53.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label fx:id="wphone">
+                     <VBox.margin>
+                        <Insets left="53.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="45.0" prefWidth="434.0" spacing="3.0">
+               <children>
+                  <Label styleClass="namelb" text="Social Account">
+                     <VBox.margin>
+                        <Insets left="53.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="socailAccount" maxWidth="328.0" minWidth="90.0" prefHeight="25.0" prefWidth="328.0" styleClass="textf">
+                     <VBox.margin>
+                        <Insets left="53.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label fx:id="wsocial">
+                     <VBox.margin>
+                        <Insets left="53.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Label prefHeight="38.0" prefWidth="87.0" text="Ship to" textFill="#7b1586" wrapText="true">
+               <VBox.margin>
+                  <Insets right="204.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Pars" size="31.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="30.0" prefWidth="500.0" spacing="50.0">
+               <children>
+                  <VBox prefHeight="30.0" prefWidth="120.0">
+                     <children>
+                        <Label styleClass="namelb" text="City">
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ChoiceBox fx:id="cityid" prefHeight="25.0" prefWidth="136.0" style="-fx-background-radius: 10px;" />
+                        <Label fx:id="wcity" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="30.0" prefWidth="120.0">
+                     <children>
+                        <Label styleClass="namelb" text="Town" />
+                        <TextField fx:id="town" prefHeight="25.0" prefWidth="124.0" styleClass="textf" />
+                        <Label fx:id="wtown" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <TextArea fx:id="street" maxHeight="38.0" maxWidth="324.0" prefHeight="38.0" prefWidth="324.0" promptText="Street , Guide" style="-fx-background-radius: 10; -fx-focus-color: #d04d9c;" />
+            <JFXButton fx:id="addnewCustmer" buttonType="RAISED" onAction="#AddNewCustmer" prefHeight="39.0" prefWidth="238.0" styleClass="submit" text="Add New Costume">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </JFXButton>
+         </children>
+      </VBox>
+      <ImageView fitHeight="45.0" fitWidth="450.0" layoutY="536.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/baner.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="backid" layoutY="516.0" onAction="#back" styleClass="back" text="Back" />
+      <ImageView fitHeight="35.0" fitWidth="495.0" layoutX="-42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/baner.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

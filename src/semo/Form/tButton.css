@@ -1,0 +1,26 @@
+.bt {
+     -fx-background-color: #C656D1;
+        -fx-font-family: Pars;
+        -fx-font-size: 18px;
+        -fx-text-fill: #FFF;
+        -fx-background-radius: 20px;
+	
+}
+.textf{
+    -fx-background-radius :1000px;
+    -fx-focus-color: #d04d9c;
+
+}
+.bt:hover {
+ -fx-cursor: hand;
+    -fx-background-color: #9C52C7;
+    -fx-font-weight: bold;
+}
+.bt:pressed {
+        -fx-rotate:1;
+}
+
+.back{
+   -fx-cursor: hand;
+   -fx-rotate:1;
+}

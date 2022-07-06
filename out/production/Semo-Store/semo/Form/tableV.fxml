@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="528.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semo.AdminController">
+   <children>
+      <TableView fx:id="tableveiw" editable="true" layoutX="7.0" layoutY="52.0" prefHeight="271.0" prefWidth="582.0" styleClass="tableVeiw">
+        <columns>
+          <TableColumn fx:id="cuidCol" minWidth="8.0" prefWidth="65.0" style="--fx-text-align: center;" text="cuid" />
+          <TableColumn fx:id="nameCol" prefWidth="102.0" text="name" />
+            <TableColumn fx:id="phoneCol" prefWidth="109.0" text="phone" />
+            <TableColumn fx:id="socialCol" prefWidth="122.0" text="social account" />
+            <TableColumn fx:id="adressCol" prefWidth="183.0" text="address" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="backid" layoutX="7.0" layoutY="497.0" onAction="#back" styleClass="back" text="back" />
+      <Label layoutX="215.0" layoutY="14.0" style="-fx-text-fill: #c82893; -fx-font-family: Pars; -fx-font-size: 30px;" text="Custmar Table" />
+      <VBox alignment="CENTER" layoutX="101.0" layoutY="323.0" prefHeight="212.0" prefWidth="395.0" spacing="10.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="45.0" prefWidth="282.0" spacing="30.0">
+               <children>
+                  <JFXButton fx:id="addid" buttonType="RAISED" onAction="#addnew" prefHeight="37.0" prefWidth="96.0" ripplerFill="#bc1c1c" styleClass="bt" text="Add new " />
+                  <JFXButton fx:id="del" buttonType="RAISED" onAction="#delete" prefHeight="37.0" prefWidth="96.0" ripplerFill="#bc1c1c" styleClass="bt" text="Delete" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="342.0" spacing="30.0">
+               <children>
+                  <JFXButton onAction="#productVeiw" prefHeight="34.0" prefWidth="134.0" styleClass="bt" text="Product list" />
+                  <JFXButton fx:id="addProd" onAction="#addProd" prefHeight="37.0" prefWidth="149.0" styleClass="bt" text="add new product" />
+               </children>
+            </HBox>
+            <JFXButton fx:id="addid1" buttonType="RAISED" onAction="#refersh" prefHeight="13.0" prefWidth="77.0" ripplerFill="#bc1c1c" styleClass="bt" text="Refersh" />
+         </children>
+      </VBox>
+      <JFXButton layoutX="511.0" layoutY="412.0" onAction="#reportData" styleClass="bt" text="Report" />
+   </children>
+   <stylesheets>
+      <URL value="@tButton.css" />
+      <URL value="@tableViewStyle.css" />
+   </stylesheets>
+</AnchorPane>

@@ -1,0 +1,34 @@
+.custmatbt {
+     -fx-background-color: #ba5699;
+        -fx-font-family: Pars;
+        -fx-font-size: 30px;
+        -fx-text-fill: #FFF;
+        -fx-background-radius: 20px;
+	
+}
+.custmatbt:hover {
+ -fx-cursor: hand;
+    -fx-border-color: #ba5699;
+    -fx-border-width: 3px;
+    -fx-border-radius: 20px;
+    -fx-background-color: #FFF;
+    -fx-text-fill: #ba5699;
+    -fx-font-weight: bold;
+}
+.custmatbt:pressed {
+        -fx-rotate:1;
+}
+.adminbt{
+       -fx-font-family: Pars;
+            -fx-font-size: 16px;
+            -fx-text-fill: #ba5699;
+            -fx-background-radius: 20px
+}
+.adminbt:hover{
+    -fx-cursor: hand;
+}
+
+.back{
+   -fx-cursor: hand;
+   -fx-rotate:1;
+}

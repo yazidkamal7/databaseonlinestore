@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Semo-Store:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Semo_Store_jar</output-path>
+    <root id="archive" name="Semo-Store.jar">
+      <element id="module-output" name="Semo-Store" />
+    </root>
+  </artifact>
+</component>

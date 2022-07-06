@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@but-styels.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semo.Controller">
+   <children>
+      <BorderPane prefHeight="407.0" prefWidth="600.0" style="-fx-background-color: white;">
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="40.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton fx:id="cuid" buttonType="RAISED" onAction="#btCu" prefHeight="50.0" prefWidth="150.0" styleClass="custmatbt" text="Custmar" textFill="WHITE">
+                     <font>
+                        <Font name="Pars" size="26.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="adminbt" buttonType="RAISED" onAction="#btAdmin" ripplerFill="#94169a" styleClass="adminbt" text="log in as Admin" textFill="#8a0d81">
+                     <font>
+                        <Font name="Pars" size="15.0" />
+                     </font></JFXButton>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="150.0" text="Welcom to our Store">
+                     <font>
+                        <Font name="Pars" size="22.0" />
+                     </font>
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#d33cd1" />
+                              <Stop color="#d33cd1" offset="0.007662835249042145" />
+                              <Stop color="#ae0dac" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                  </Label>
+                  <ImageView fitHeight="197.0" fitWidth="370.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/semo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

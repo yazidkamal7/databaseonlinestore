@@ -1,0 +1,8 @@
+.tableVeiw{
+    -fx-font-family: Arabic Typesetting;
+    -fx-font-size:14;
+    -fx-alignment: center;
+    -fx-selection-bar: #761054;
+    -fx-selection-bar-non-focused: #810D8C;
+
+}

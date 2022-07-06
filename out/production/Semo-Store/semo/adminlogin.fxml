@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="454.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="semo.Controller">
+   <children>
+      <JFXTextField focusColor="#d04d9c" labelFloat="true" layoutX="137.0" layoutY="155.0" prefHeight="25.0" prefWidth="180.0" promptText="user name" unFocusColor="#651446">
+         <font>
+            <Font name="Ink Free" size="17.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField focusColor="#d04d9c" labelFloat="true" layoutX="137.0" layoutY="216.0" prefHeight="25.0" prefWidth="180.0" promptText="password">
+         <font>
+            <Font name="Ink Free" size="17.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="logbt" buttonType="RAISED" layoutX="155.0" layoutY="280.0" onAction="#login" prefHeight="55.0" prefWidth="124.0" ripplerFill="#b50d75" styleClass="custmatbt" text="Log in">
+         <font>
+            <Font name="Ink Free" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="111.0" fitWidth="344.0" layoutX="91.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/semo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="53.0" fitWidth="454.0" layoutY="371.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@img/baner.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="adminaback" layoutY="346.0" styleClass="back" text="Back" />
+   </children>
+   <stylesheets>
+      <URL value="@but-styels.css" />
+      <URL value="@Form/but-styels.css" />
+   </stylesheets>
+</AnchorPane>
